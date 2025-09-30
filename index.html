@@ -38,8 +38,8 @@
 
     .turtle-gallery {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column; /* stack vertically */
+      align-items: center;
       gap: 20px;
       padding: 20px;
     }
@@ -49,7 +49,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       padding: 10px;
-      width: 220px;
+      width: 300px;
     }
 
     .turtle-card img {
@@ -60,6 +60,13 @@
     .turtle-card h2 {
       font-size: 1.2em;
       margin: 10px 0 0 0;
+    }
+
+    .rank {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #ff6600;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -72,22 +79,27 @@
   <main>
     <div class="turtle-gallery">
       <div class="turtle-card">
+        <div class="rank">1st Place</div>
         <img src="turtle1.png" alt="Gangsta Turtle">
         <h2>Gangsta Turtle</h2>
       </div>
       <div class="turtle-card">
+        <div class="rank">2nd Place</div>
         <img src="turtle2.png" alt="Cool Shades Turtle">
         <h2>Cool Shades Turtle</h2>
       </div>
       <div class="turtle-card">
+        <div class="rank">3rd Place</div>
         <img src="turtle3.png" alt="Beach Turtle">
         <h2>Beach Turtle</h2>
       </div>
       <div class="turtle-card">
+        <div class="rank">4th Place</div>
         <img src="turtle4.png" alt="Thumbs Up Turtle">
         <h2>Thumbs Up Turtle</h2>
       </div>
       <div class="turtle-card">
+        <div class="rank">5th Place</div>
         <img src="turtle5.png" alt="Skater Turtle">
         <h2>Skater Turtle</h2>
       </div>
